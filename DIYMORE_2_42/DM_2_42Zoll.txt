@@ -1,0 +1,32 @@
+BlueOrangeLive  31.01.2023
+
+OLED-Display von Diy More  2,42 Zoll I2C
+
+R4 entfernen
+R5 und R7 brücken
+R3 =4K7
+
+Res und DC Pin über 10K an VCC 3.3V
+
+Adresse 61 (3D) DC Pin auf high.
+Adresse 60 (3C) DC Pin auf low.
+
+Reset Pin muß mit dem Pin Res/En vom ESP32 verbunden werden sonst
+bleibt es Dunkel.
+
+
+Laut Beschreibung benötigt dieses Modul den Treiber SSD1309 aber 
+es läuft auch mit Treiber SSD1306.
+
+Kabel:
+Pin 1 = GND
+Pin 2 = VCC
+Pin 3 = SCL
+Pin 4 = SDA
+Pin 5 = RES
+Pin 6 = NC
+Pin 7 = NC
+
+
+Bild 1 und 2 zeigen das Oled in anwendung mit FluidNC.
+
